@@ -1,3 +1,3 @@
 # chai aur backend series 
 
-This is a video series on backend using javascript
+This is My Mern Stack Application
