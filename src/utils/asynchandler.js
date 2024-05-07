@@ -13,8 +13,8 @@
 // writing same code using promises
 
 export const asynchandler = (requesthandler) => {
-  (req, res, next) => {
-    Promise.resolve(requesthandler(re, res, next)).catch((err) => {
+  return (req, res, next) => {
+    Promise.resolve(requesthandler(req, res, next)).catch((err) => {
       next(err);
     });
   };
